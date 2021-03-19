@@ -1,1 +1,17 @@
+/////////// Finance \\\\\\\\\\\\\\
 
+
+Le systeme est concu pour pouvoir etre utilisé ave de la vrai ou fause monnaie
+  
+  vrai monnaie : il faut configuré le monnayeur avec des pieces ou jeton qui représente une valeur, idem avec le gestionnaire de billet
+  fausse monnaie : il faut configuré le monnayeur avec des pieces ou jeton qui représente aucune  valeur, idem avec le gestionnaire de billet
+  
+  
+Monnayeur
+  Il est configurable en lui faissant passer plusieurs fois un element (piece/jeton) a travers ca fente
+  A chaque passage il enregistre le point, diametre exterieur, et eipesseur de l'element introduit
+  Une fois fois il est capable de reconnaitre l element introduit et decide le l'accepter ou de le rejeter
+  
+Le gestionnaire des billet
+  Il est concue sur le meme principe d'apprentissage que le monnayeur
+  Sont seul capteur, la couleur, il compare en plusieurs point, la couleur d'un element introduit
