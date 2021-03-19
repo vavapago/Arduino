@@ -1,0 +1,32 @@
+/////////// Type de systeme \\\\\\\\\\\\\\
+
+
+2 systemes sont utilisé dans ce projet :
+- RASPBERRY PI B+
+- arduinoS
+
+1 raspberry pi B +
+  est utilisé pour géré l'ensemble des arduinos et des elements electronique présent dans la machine
+  sont role est de faire circuler l'ensemble des requetes entre les arduinos
+  Il heberge un serveur node red (basé sur nodeJS)
+    L'interface de node red permet de visuealiser et controler les informations (capteur) et ordre (actionneur) de la machine
+    Le serveur est en lien direct avec les arduino via la connection usb (rasp - arduinos)
+    Il est utilisé pour géré les sons et les emet atravers le port HDMI/jack du rapsberry, et le transmet aux haut parleur via un petit amplificateur PCB
+    L'interface de programmation et client est accessible via la connectrion wifi du rapsberry grace au logitiel interne capable de créer une conenction direct entre
+    le rasp et un PC/SMARTPHONE/TABLETTE/TV ... (tout equipement capable de lire une page web)
+    En outre aucun logitiel a installer sur l'ordinateur de programmation/client
+    Pour assuré la sécurité et évité toute edition du programme, l'acces a la page de programmation peut etre soumit a un mot de passe
+  
+Arduino mega
+  Il est utilisé pour géré le panneau de controle avant de la machine, il gere l'appui des touches de jeux
+  
+Arduino nano
+  Il gere l'entré et la sortie (rejet) des billet + l'entré et la sortie (rejet) des pieces.
+  
+ Arduino nano
+  Il est utile pour les accessoire de la machine, il commande l'eclairage + cloche de la machine
+  D'autre animation sonore ou visuel peuvent lui etre affecté
+  
+Arduino UNO
+  Il est utiliser pour coordonner les rouleau de la machine a sous
+  A travers un sheil de controle de moteur pas a pas (4 moteur + 4 capteur de posotion sont utiliser) a changer en fonction du nombre de rouleau de jeu souhaité.
