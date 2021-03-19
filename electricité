@@ -1,0 +1,12 @@
+electricité
+
+Le systeme est alimenté en 230V EU 50hz 16A
+
+Il est protégé par un disjoncteur magnéto thermique 4A 230V
+
+Un bouton alumage général en rouge commande la mise sous tension des éléments informatique (raspberry et arduino)
+Un autre bouton chrome bleu permet la mise sous tension des autre element de la machine via un relais 230A
+
+Une alimentation a decoupage permet de convertir le 230V en 12V régulé.
+Le 12v alimente les elements fonctionnent sur 12v et une alimentation régulé 12v/5v
+Le 5v alimente les elements fonctionnent sur 5v
